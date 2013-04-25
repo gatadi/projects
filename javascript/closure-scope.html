@@ -1,0 +1,44 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function Controller(){
+
+    this.r = { x : 10, y : 20 };
+    var vM = { a : "A", b: "B"} ;
+    this.handle = function(){
+        
+        readResource({
+            action : function(){
+                this.handleAction(vM);
+            },            
+            success : function(){
+            },            
+            scope : this
+        }) ;
+    },
+    
+    this.handleAction = function(p){
+        alert("calling actioin.." + this.r.x + ", " + p.a);                
+    }
+    
+}
+
+var c = new Controller();
+c.handle();
+
+
+function readResource(obj){
+    //obj.action.call(obj.scope); works
+    obj.action.call(); //doesn't work as it uses window as current scope and there is no handlAction function.
+}
+
+</script>
+</head>
+
+
+<body>
+  Test JavaScript closre scope
+</body>
+
+</html>

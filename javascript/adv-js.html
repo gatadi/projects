@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<script language="javascript">
+
+function Exe1 ()
+{
+    function Tracker(name)
+    {
+        this.name = name ;
+        var count = 10 ;
+        function display(){
+            console.log( "count: " + count) ;        
+        }
+        
+        Tracker.prototype.incrementCount = function(){
+            count++ ;
+            display();
+        }    
+    }
+
+    var o1 = new Tracker("tracker 1");
+    var o2 = new Tracker("tracker 2");
+    var o3 = new Tracker("tracker 3");
+    o1.incrementCount();
+    o2.incrementCount();
+    o3.incrementCount();
+}
+
+
+(function(){
+    var count = 10 ;
+    
+    function display(){
+        console.log("count : " + count) ;
+    }
+    
+    Tracker = function(name){
+        this.name = name ;
+    }
+    
+    Tracker.prototype.incrementCount = function(){
+        count++ ;
+        display() ;
+    }
+    
+    var o1 = new Tracker("tracker 1") ;
+    var o2 = new Tracker("tracker 2") ;
+    var o3 = new Tracker("tracker 3");
+    
+    o1.incrementCount();
+    o2.incrementCount();    
+    o3.incrementCount();
+})();
+
+Exe1();
+
+</script>
+
+</head>
+
+<body>
+
+<div> test js..</div>
+</body>
+</html>

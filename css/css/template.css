@@ -1,0 +1,67 @@
+/**** PLPT TEMPLATE ********************************************************************/
+/*=====================================================================================*/
+
+* { margin:0px; padding:0px; }
+
+body {
+	font: normal 12px/14px Arial, Verdana, Helvetica, sans-serif;
+	color:#333;
+	background-color:#ffffff;
+	margin:0px; padding:0px;
+}
+.wrapper {
+	display:block; overflow:hidden; clear:both;
+	width:100%;
+	margin:0px; padding:100px;
+}
+p { font-size:14px; }
+
+/**** CTA's ****************************************************************************/
+/*=====================================================================================*/
+
+a.cta_1,
+a.cta_1-5,
+a.cta_2 {
+	display:inline-block; clear:both;
+	font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#333; text-decoration:none;
+	background: transparent url('../images/ctas.png') no-repeat scroll right 0px;
+}
+a.cta_1 span,
+a.cta_1-5 span,
+a.cta_2 span { display: block; background: transparent url('../images/ctas.png') no-repeat scroll left 0px; } 
+
+/*** Size 1 CTA ****/
+a.cta_1 { height: 25px; padding-right: 15px; font-size:12px; background-position: right 0px; }
+a.cta_1 span { line-height: 18px; padding: 3px 0 7px 15px; background-position: 0px 0px; }
+a.cta_1.grey { background-position: right -200px; }
+a.cta_1.grey span { background-position: 0px -200px; }
+a.cta_1.blue { background-position: right -400px; }
+a.cta_1.blue span { background-position: 0px -400px; color:#fff; }
+a.cta_1.dgrey { background-position: right -600px; }
+a.cta_1.dgrey span { background-position: 0px -600px; color:#fff; }
+a.cta_1.orange { background-position: right -800px; }
+a.cta_1.orange span { background-position: 0px -800px; color:#fff; }
+
+/*** Size 1.5 CTA ****/
+a.cta_1-5 { height: 38px; font-size:18px; padding-right: 22px; background-position: right -50px; }
+a.cta_1-5 span { line-height: 18px; padding: 9px 0 11px 22px; background-position: 0px -50px; } 
+a.cta_1-5.grey { background-position: right -250px; }
+a.cta_1-5.grey span { background-position: 0px -250px; }
+a.cta_1-5.blue { background-position: right -450px; }
+a.cta_1-5.blue span { background-position: 0px -450px; color:#fff; }
+a.cta_1-5.dgrey { background-position: right -650px; }
+a.cta_1-5.dgrey span { background-position: 0px -650px; color:#fff; }
+a.cta_1-5.orange { background-position: right -850px; }
+a.cta_1-5.orange span { background-position: 0px -850px; color:#fff; }
+
+/*** Size 2 CTA ****/
+a.cta_2 { height: 50px; padding-right: 30px; font-size:24px; background-position: right -120px; }
+a.cta_2 span { line-height: 23px; padding: 12px 0 15px 30px; background-position: left -120px; } 
+a.cta_2.grey { background-position: right -320px; }
+a.cta_2.grey span { background-position: 0px -320px; }
+a.cta_2.blue { background-position: right -520px; }
+a.cta_2.blue span { background-position: 0px -520px; color:#fff; }
+a.cta_2.dgrey { background-position: right -720px; }
+a.cta_2.dgrey span { background-position: 0px -720px; color:#fff; }
+a.cta_2.orange { background-position: right -920px; }
+a.cta_2.orange span { background-position: 0px -920px; color:#fff; }

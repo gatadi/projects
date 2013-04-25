@@ -1,0 +1,152 @@
+<html>
+<head>
+<script>
+function closures(){
+    var f = [];
+    function foo()
+    {
+        for(var i=1; i<3; i++){
+            f[i] = function() {    
+                var x = i;
+                return function(){ alert(x);} 
+            }();
+        }
+    }
+
+    foo() ;
+    for(var i=1; i<3; i++){
+        f[i]();
+    }
+}
+
+
+function previlageMethodsInstance(){
+    function Tracker(name){
+        this.name = name ;
+        var count = 10 ;
+        
+        this.incrementCount = function(){
+            count++ ;
+        }
+        
+        this.display = function(){
+            alert(count);
+        }
+    }
+    
+    var o1 = new Tracker("name1");
+    var o2 = new Tracker("name2");
+    o1.incrementCount();
+    o1.display();
+    o2.incrementCount();
+    o2.display();
+}
+
+function previlageMethodsStatic(){
+    var count = 10 ;
+    function Tracker(name){
+        this.name = name ;
+        
+        this.incrementCount = function(){
+            count++ ;
+        }
+        
+        this.display = function(){
+            alert(count);
+        }
+    }
+    
+    var o1 = new Tracker("name1");
+    var o2 = new Tracker("name2");
+    o1.incrementCount();
+    o1.display();
+    o2.incrementCount();
+    o2.display();
+}
+
+function modulePattern(){
+
+    MyObject = function(){
+        var private1, private2 ;
+        return {
+            init : function(value1, value2){
+                private1 = value1 ;
+                private2 = value2 ;                
+            },
+            
+            display : function(){
+                alert(private1 + ", " + private2) ;
+            }
+        }
+    }();
+
+    MyObject.init("Age", 25) ;
+    MyObject.display();
+}
+
+
+function modulePatternImproved(){
+
+    MyObject = function(){
+        var self, private1, private2 ;
+        
+        self = {
+            init : function(value1, value2){
+                private1 = value1 ;
+                private2 = value2 ;
+                self.display();
+            },
+            
+            display : function(){
+                alert(private1 + ", " + private2) ;
+            }
+        }
+        
+        return self ;
+    }();
+
+    MyObject.init("Age", 25) ;
+    MyObject.display();
+}
+
+function encapsulation(){
+    Rectangle = function(w, h){
+        var width = w, height = h;
+        
+        this.getWidth = function(){
+            return width ;
+        }
+        this.getHeight = function(){
+            return height ;
+        }
+        this.area = function(){
+            return width*height ;
+        }
+    }
+
+    var r1 = new Rectangle(10, 20);
+    var r2 = new Rectangle(5, 25);
+    alert(r1.area() + ", " + r2.area());
+}
+
+function inheritance(){
+    alert("inheritance()");
+}
+
+//closures();
+//previlageMethodsInstance();
+//previlageMethodsStatic();
+//modulePattern();
+//modulePatternImproved();
+//encapsulation()  ;
+
+inheritance();
+
+</script>
+</head>
+
+<body>
+    <h3>Test...</h3>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+Change 460576 on 2011/11/14 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0052040
+	FF: Production patch for 2011.21 Patch for IWS UM APIs
+
+Change 460575 on 2011/11/14 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0052040
+	FF: Base common version for patch
+
+Change 460570 on 2011/11/14 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0052017
+	FF: base version 
+
+Change 460569 on 2011/11/14 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0052017
+	FF: Update File paths for handlers
+
+Change 460568 on 2011/11/14 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0052017
+	FF: Production patch for 2011.21 Patch for IWS UM APIs - base version
+
+Change 459581 on 2011/11/07 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID:  WEB-UMRESTAPI
+	BID: INT0033139
+	FF: Added null, empty, whitespace check for user id when set using getter in datamanger
+
+Change 459572 on 2011/11/07 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: Added null, empty, whitespace check for user id when set using getter in datamanger
+
+Change 459570 on 2011/11/07 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: base 
+
+Change 459362 on 2011/11/04 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: Added null, empty, whitespace check for user id when set using getter in datamanger
+
+Change 459361 on 2011/11/04 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: inital base common version 
+
+Change 459208 on 2011/11/03 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF:  Added null, empty, whitespace check for userOid coming back directly as member of data manager.
+
+Change 459207 on 2011/11/03 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: Added null, empty, whitespace check for userOid coming back directly as member of data manager.
+
+Change 459195 on 2011/11/03 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033139
+	FF: Added null, empty, whitespace check for userOid coming back directly as member of data manager.
+
+Change 459156 on 2011/11/03 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033094
+	FF: Unable to place order through dpwelcome new user flow. Fixed empty string for userOid when session is empty
+
+Change 459153 on 2011/11/03 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033094
+	FF: Unable to place order through dpwelcome new user flow. Fixed empty string for userOid when session is empty
+
+Change 458617 on 2011/10/31 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: INT0033094
+	FF: Added null, empty, whitespace check for user id when set using getter in datamanger
+
+Change 457595 on 2011/10/24 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0051427
+	FF: Fixed userdetail 
+
+Change 456300 on 2011/10/18 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0051427
+	FF: Production patch um api must have p1 fixes
+
+Change 456298 on 2011/10/18 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0051427
+	FF: Initial checkin for iws um api production patch 
+
+Change 456219 on 2011/10/18 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: Changed ccInfo return the cc exiration date as well 
+
+Change 454838 on 2011/10/12 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0051223
+	FF: Regression patch - changes 
+
+Change 454832 on 2011/10/12 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID:  WEB-UMRESTAPI
+	BID: SNF0051223
+	FF: Regression patch - create base common revision
+
+Change 453759 on 2011/10/07 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: Set website info in dm before cc validation
+
+Change 453484 on 2011/10/06 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0050869
+	FF: Saftey for -1 acctoids from the session in the validator 
+
+Change 453445 on 2011/10/06 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0046509
+	FF: Regression patch for .19 plus fix for reg pass failure 
+
+Change 452959 on 2011/10/04 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0050240
+	FF: Set dbnode hints for call to cc validation 
+
+Change 452948 on 2011/10/04 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF50566
+	FF: Changed login to not use the original web site info
+
+Change 452829 on 2011/10/04 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNFN0050566
+	FF: Changed lookup for email to get the correct pod, then go look at acct_node for acctOid
+
+Change 452187 on 2011/09/30 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: conver the remaining iws services to use simple pojos for pod calls
+
+Change 452033 on 2011/09/30 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: Possible fix for reg um api service
+
+Change 451880 on 2011/09/29 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: added a few messages to see if req values are null from pod to pod
+
+Change 451749 on 2011/09/29 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: refactor all the iws um services to be pod 2 pod okay
+
+Change 451114 on 2011/09/27 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: Add missing class to fix build
+
+Change 451097 on 2011/09/27 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: chnaged userUpdatePayment to use pod to pod calls correctly 
+
+Change 450346 on 2011/09/23 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0050550
+	FF: Regression patch for all things holy 
+
+Change 449981 on 2011/09/22 by levi.miller@psyg-laptop
+
+	
+	VID: DAM
+	PID: 
+	BID: SNF0050496
+	FF: Remove isFavorite logic from albumDetail
+
+Change 449883 on 2011/09/22 by levi.miller@psyg-laptop
+
+	
+	VID: DAM
+	PID: 
+	BID: 
+	FF: Removed the isFavorite logic in the handleRead method of CAlbumDetailHandler, the client already has this information
+
+Change 448206 on 2011/09/15 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0049408
+	FF: Changed acct_attr update method to use a single transaction instead of one for each key value pair passed in
+
+Change 446161 on 2011/09/08 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID:  WEB-UMRESTAPI
+	BID: 
+	FF: updated country to countyCode
+
+Change 446069 on 2011/09/08 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0048104
+	FF: Switch iws registration call over to use newer registration method
+
+Change 445810 on 2011/09/07 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0048104
+	FF: Added the acct_attr update to the _registration method in UsrMgr
+
+Change 444622 on 2011/08/31 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: fix number format exception for birth month and year 
+
+Change 443077 on 2011/08/24 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: 
+	FF: Fix incorrect address param for update
+
+Change 443033 on 2011/08/24 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0049303
+	FF: Remove spaces from incoming passwords
+
+Change 442653 on 2011/08/23 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0049303
+	FF: Stopped passwords with space chars from being saved
+
+Change 442422 on 2011/08/22 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0048853
+	FF: Added validation message for all empty fields
+
+Change 442419 on 2011/08/22 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: SNF0048922
+	BID: WEB-UMRESTAPI
+	FF: Changed to include the correct test params
+
+Change 442418 on 2011/08/22 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0048203
+	FF: Got rid of number format exception messages
+
+Change 442417 on 2011/08/22 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0046825
+	FF: Changed partnerOptIn value to ALL/NON instead of true false
+
+Change 442415 on 2011/08/22 by levi.miller@psyg-laptop
+
+	
+	VID: WEB
+	PID: WEB-UMRESTAPI
+	BID: SNF0048959
+	FF: Added check for LTE account before allowing a billing address to be saved
+

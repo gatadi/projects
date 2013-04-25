@@ -1,0 +1,146 @@
+<html>
+<head>
+    <script type="text/javascript" src="xml2json.js"></script>
+</head>
+<body>
+Test html
+<script type="text/javascript">
+    var X2JS = new X2JS();
+    
+    // JSON to DOM
+    var xmlDoc = X2JS.json2xml(
+        {
+            MyRoot : {
+                MyChild : 'my_child_value',
+                MyAnotherChild: 10,
+                MyArray : [ 'test', 'test2' ],
+                MyArrayRecords : [ 
+                    {
+                        ttt : 'vvvv' 
+                    },
+                    {
+                        ttt : 'vvvv2' 
+                    }                     
+                ]
+            }
+        }
+    );
+    
+    
+    // JSON to XML string
+    var xmlDocStr = X2JS.json2xml_str(
+        {
+            MyRoot : {
+                MyChild : 'my_child_value',
+                MyAnotherChild : 10,
+                MyArray : [ 'test', 'test2' ],
+                MyArrayRecords : [ 
+                    {
+                        ttt : 'vvvv' 
+                    },
+                    {
+                        ttt : 'vvvv2' 
+                    }                     
+                ]
+            }
+        }
+    );
+    
+    alert(xmlDocStr);
+    
+    // XML string to JSON    
+    var xmlText = "<MyOperation><test>Success</test><test2><item>ddsfg</item><item>dsdgfdgfd</item></test2></MyOperation>";
+    var jsonObj = X2JS.xml_str2json( xmlText );
+    alert (jsonObj.MyOperation.test);
+    alert (jsonObj.MyOperation.test_asArray[0]);
+
+    // XML/DOM to JSON    
+    var xmlText = " <MyOperation> <test>- Success -</test> <test2> <item> ddsfg </item> <item>dsdgfdgfd</item></test2></MyOperation>"
+    xmlDoc=X2JS.parseXmlString(xmlText);
+    
+    var jsonObj = X2JS.xml2json( xmlDoc );
+    alert (jsonObj.MyOperation.test);
+    
+    // Parsing XML attrs
+    var xmlText = "<MyOperation myAttr='SuccessAttrValue'><txtAttrChild sAttr='SUCCESS TXT ATTR CHILD'>SUCCESS TXT</txtAttrChild><test>Success</test><test2 myAttr='SuccessAttrValueTest2'><item>ddsfg</item><item>dsdgfdgfd</item></test2></MyOperation>";
+    var jsonObj = X2JS.xml_str2json( xmlText );
+    alert (jsonObj.MyOperation._myAttr);
+    alert (jsonObj.MyOperation.test2._myAttr);
+    alert (jsonObj.MyOperation.txtAttrChild._sAttr);
+    alert (jsonObj.MyOperation.txtAttrChild.__text);
+    alert (jsonObj.MyOperation.txtAttrChild);
+    
+    // JSON to XML attrs
+    var xmlDocStr = X2JS.json2xml_str(
+        {
+            TestAttrRoot : {
+                _myAttr : 'myAttrValue',                
+                MyChild : 'my_child_value',
+                MyAnotherChild: 10,
+                MyTextAttrChild : {
+                    _myTextAttr : 'myTextAttrValue',
+                    __text : 'HelloText'
+                }
+            }
+        }
+    );
+    
+    alert(xmlDocStr);
+    
+    
+    // Parse XML with namespaces
+    var xmlText = "<testns:MyOperation xmlns:testns='http://www.example.org'><test>Success</test><test2 myAttr='SuccessAttrValueTest2'><item>ddsfg</item><item>dsdgfdgfd</item><item2>testArrSize</item2></test2></testns:MyOperation>";
+    var jsonObj = X2JS.xml_str2json( xmlText );
+    alert(jsonObj.MyOperation.test);
+    if(jsonObj.MyOperation.test2.item.length > 2)
+	alert("Error! Incorrect array len!");
+    
+    var testObjC = {
+            'm:TestAttrRoot' : {
+            	'_tns:m' : 'http://www.example.org',
+                '_tns:cms' : 'http://www.example.org',
+                MyChild : 'my_child_value',
+                'cms:MyAnotherChild' : 'vdfd'
+            }
+    }
+    
+    // Parse JSON object with namespaces
+    var xmlDocStr = X2JS.json2xml_str(
+        testObjC
+    );
+    
+    alert(xmlDocStr);
+    
+    // Parse JSON object constructed with another NS-style
+    var testObjNew = {
+            TestAttrRoot : {
+            	__prefix : 'm',
+            	'_tns:m' : 'http://www.example.org',
+            	'_tns:cms' : 'http://www.example.org',
+                MyChild : 'my_child_value',
+                MyAnotherChild : {
+                	__prefix : 'cms',
+                	__text : 'vdfd'
+                }
+            }
+    }
+    
+    // Parse JSON object with namespaces
+    var xmlDocStr = X2JS.json2xml_str(
+        testObjNew
+    );
+    
+    alert(xmlDocStr);
+
+    // Parse XML with header
+    var xmlText = "<?xml version='1.0' encoding='utf-8' ?>\n"+
+    			  "<test>XML HEADER SUCCESS!</test>";
+    
+    var jsonObj = X2JS.xml_str2json( xmlText );
+    alert(jsonObj.test);
+    
+    alert('-- ALL TESTS COMPLETED! --');
+            
+</script>
+</body>
+</html>

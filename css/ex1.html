@@ -1,0 +1,220 @@
+<html>
+<title>Learn HTML5/CSS3 </title>
+<head>
+<style>
+<!-------------
+Cursor
+    cursor: pointer;
+
+Display
+    display: block; //none
+    visibility:show; //hidden;
+Fonts
+    font-color: red;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+
+Text
+    text-align: center; //left, right
+    text-decoration: none; // underline, 
+Margins
+    margin: 1px 1px 1px 1px;   //top right bottom left
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+
+Paddings
+    padding: 0 0 0 10px ;  //top right bottom left
+  
+Background
+    background: url('x.jpg') 1px -10px no-repeat;
+    background-position:
+    backgound-color: red ;
+
+Border
+    border: 1px solid red;
+    
+Overflow
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+
+Float
+    float: left;
+    float: right;
+    clear: both;
+    
+Width/hegith
+    width: 100px;
+    width: 100%;
+    height: 40px;
+    hegith: 50%;
+
+Color
+    color: red;
+    
+-->
+body {
+    
+    font-family : Georgia, Times New Roman, Serif;
+    font-size : 12px;
+}
+
+.tiles{
+    width: 680px;
+    height:400px;
+    overflow-y:auto;    
+    border: 1px dashed grey; 
+    clear: both;    
+}
+
+.tile {
+    width : 200px;
+    height : 300px;    
+    float : left;
+    margin : 0px 0px 20px 20px;
+    background-color : #FFCCFF;  
+    
+}
+
+.tile .top-section{
+    width : 200px ;
+    height : 175px ;
+    position: relative;
+    
+}
+.tile .top-section .ts1 {
+    border : solid 1px grey;
+    width: 160px;
+    height: 130px ;
+    position : absolute ;
+    top: 20px;
+    left: 20px;  
+    background:url('mugs-sprite.png');      
+    background-repeat: no-repeat;      
+}
+
+
+.tile .top-section .ts2 {
+    border : solid 1px red;
+    width: 160px;
+    height: 130px ;
+    position : relative ;
+    top: 20px;
+    left: 20px;      
+}
+
+
+.bottom-section{
+    width : 200px ;
+    height : 125px ;    
+    background-color : #FFFFCC;  
+    text-align: center;
+}
+
+
+
+.tab-container{
+    position: relative;
+    border-bottom-width: 2px;   
+    border-bottom-style: solid;
+    border-bottom-color: #999fFF;
+    width: 100%;
+    height: 60px;    
+    
+}
+
+.tab{
+    position: relative;     
+    width: 23%;
+    height: 60px;  
+    float: left;
+    background-color: #999fFF;    
+    margin: 0px 10px 0px 0px;    
+    text-align: center;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<div style="width:50%; height:50%; border:1px dashed grey;"> 
+<div class="tab-container">
+    <a href="#" class="tab">Photos</a>
+    <a href="#" class="tab">Store</a>
+    <a href="#" class="tab">Your Account</a>
+    <a href="#" class="tab">Projects</a>
+</div>
+</div>
+
+
+<div class="tiles"">    
+    <div class="tile">
+      <div class="top-section">
+        <div class="ts1"></div>
+        <div class="ts2"></div>
+      </div>
+      <div class="bottom-section">
+        <ul> 
+            <li style="text-align:left">list 1</li> 
+            <li style="text-align:left">list 2</li> 
+            <li style="text-align:left">list 3</li> 
+            <li style="text-align:left">list 4</li> 
+        </ul>
+        </div>
+    </div>
+    
+    <div class="tile">
+      <div class="top-section">
+        <div class="ts1"></div>
+      </div>
+      <div class="bottom-section">
+        <ul> 
+            <li style="text-align:left">list 1</li> 
+            <li style="text-align:left">list 2</li> 
+            <li style="text-align:left">list 3</li> 
+            <li style="text-align:left">list 4</li> 
+        </ul>
+        </div>
+    </div>
+    
+    <div class="tile">
+      <div class="top-section">
+        <div class="ts1"></div>
+      </div>
+      <div class="bottom-section">
+        <ul> 
+            <li style="text-align:left">list 1</li> 
+            <li style="text-align:left">list 2</li> 
+            <li style="text-align:left">list 3</li> 
+            <li style="text-align:left">list 4</li> 
+        </ul>
+        </div>
+    </div>
+    
+        <div class="tile">
+      <div class="top-section">
+        <div class="ts1"></div>
+      </div>
+      <div class="bottom-section">
+        <ul> 
+            <li style="text-align:left">list 1</li> 
+            <li style="text-align:left">list 2</li> 
+            <li style="text-align:left">list 3</li> 
+            <li style="text-align:left">list 4</li> 
+        </ul>
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="xml2json.js"></script>
+
+
+<script type="text/javascript">
+
+	var X2JS = new X2JS();
+
+    // JSON to DOM
+    var xmlDoc = X2JS.json2xml(
+        {
+            MyRoot : {
+                MyChild : 'my_child_value',
+                MyAnotherChild: 10,
+                MyArray : [ 'test', 'test2' ],
+                MyArrayRecords : [ 
+                    {
+                        ttt : 'vvvv' 
+                    },
+                    {
+                        ttt : 'vvvv2' 
+                    }                     
+                ]
+            }
+        }
+    );
+    
+	    
+    // JSON to XML string
+    var xmlDocStr = X2JS.json2xml_str(
+        {
+            MyRoot : {
+                MyChild : 'my_child_value',
+                MyAnotherChild : 10,
+                MyArray : [ 'test', 'test2' ],
+                MyArrayRecords : [ 
+                    {
+                        ttt : 'vvvv' 
+                    },
+                    {
+                        ttt : 'vvvv2' 
+                    }                     
+                ]
+            }
+        }
+    );
+    
+        
+    // XML string to JSON    
+    var xmlText = "<MyOperation><test>Success</test><test2><item>ddsfg</item><item>dsdgfdgfd</item></test2></MyOperation>";
+    var jsonObj = X2JS.xml_str2json( xmlText );
+	
+	
+	
+	
+</script>
+
+<style>
+.header {
+	background-color : #3399CC;	
+	height : 50px ;	
+	padding : 10px ;	
+	text-align : center ;
+	font-color : white ;
+	font-size : 2em ;
+}
+
+.footer {
+	background-color : #3399CC;	
+	height : 50px ;	
+	padding : 10px ;	
+	text-align : center ;
+	font-color : white ;
+	font-size : 2em ;
+}
+
+.body {
+	text-align : center ;
+	border : 1px #3399CC solid ;
+	height : 400px ;
+	widthg : 600px ;
+}
+
+.picker {
+	border : 1px #3399CC solid ;
+	height : 100px ;
+}
+
+.upload-progress {
+	border : 1px #3399CC solid ;
+	height : 300px ;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+
+function onFileSelected(element)
+{
+	alert(element.value);		
+	var x = document.getElementById('upload-container');
+	x.innerHtml
+}
+
+
+</script> 
+
+</head>
+
+<title> XML to JSON  - JSON to XML </title>
+
+<body>
+	<div class="header"> Header  </div>
+	<div class="body">
+		<div class="picker"><input onchange="javascript:onFileSelected(this)" type="file" name="uploadfile"/>input file element</div>
+		<div id="upload-container" class="upload-progress">upload progress area</div>		 
+	</div>
+	<div class="footer"> Footer  </div>
+</body>
+</html>

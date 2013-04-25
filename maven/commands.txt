@@ -1,0 +1,24 @@
+mvn archetype:generate -DgroupId=com.learntdd -DartifactId=demo-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn -version
+
+mvn compile
+
+mvn test
+
+mvn package
+
+mvn clean dependency:copy-dependencies package
+
+mvn site
+
+java -cp target/my-app-1.0-SNAPSHOT.jar com.snapfish.learntdd.App
+
+mvn exec:java -Dexec.mainClass="com.learntdd.App"  -Dexec.args="arg0 arg1 arg2"  -Dexec.classpathScope=runtime 
+
+mvn test -Pexec-java
+
+mvn test -Pjcoverage
+
+mvn test -Pccoverage
+

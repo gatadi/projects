@@ -1,0 +1,12 @@
+<settings>
+
+  <proxies>
+   <proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>web-proxy.houston.hp.com</host>
+      <port>8080</port>      
+    </proxy>
+  </proxies>
+
+</settings>

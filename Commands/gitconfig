@@ -1,0 +1,8 @@
+[user]
+	name = gatadi
+	email = vijay.gatadi@hp.com
+[core]
+	editor = gedit
+
+[http]
+	proxy = http://web-proxy.atl.hp.com:8088

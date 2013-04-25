@@ -1,0 +1,65 @@
+0. Set up proxy for apt-get and system-wide
+-----------------------------------------------
+sudo echo "Acquire::http::Proxy \"http://web-proxy.atl.hp.com:8088";\" > /etc/apt/apt.conf
+
+1. Basic Software updates
+---------------------------------
+> sudo apt-get update
+> sudo apt-get install build-essential
+> sudo add-apt-repository ppa:ubuntu-x-swat/x-updates
+> sudo apt-get update
+> sudo apt-get dist-upgrade
+> sudo apt-get install nvidia-current
+> vi /etc/default/grub
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"
+> sudo update-grub
+
+live nouveau.modeset=0
+
+2. Adobe Flashplugin
+-------------------------------------
+> sudo apt-get install adobe-flashplugin
+   (or)
+> sudo apt-get install flashplugin-installer
+
+3. RPM installation
+----------------------------------------
+> sudo apt-get install rpm
+
+
+4. Remote Desktop
+---------------------------------------
+windows 7 to Ubuntu
+http://www.youtube.com/watch?v=KY3V79t5tKA
+install xrdp
+create ~/.xsession and add following line
+gnome-session --session=ubuntu-2d
+
+5. Dropbox
+--------------------------------------------
+> cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+> sudo apt-get install nautilus-dropbox
+
+> sudo dropboxd
+
+6. Storagemadeeasy
+------------------------------------------
+http://www.storagemadeeasy.com
+sudo apt-get isntall storagemadeeasy
+
+7. JDK
+----------------------------------------------
+> sudo apt-get install openjdk-6-jdk openjdk-6-source openjdk-6-doc
+(or)
+> download and install
+
+8. Apache Ant
+---------------------------------------------
+http://mirror.reverse.net/pub/apache//ant/binaries/apache-ant-1.9.0-bin.tar.gz
+
+9. Oracle Instanct Client (Basic & SQLPlus)
+-----------------------------------------------
+> sudo apt-get install libaio1 
+> create instantclient folder, unzip these two files here
+> 
+

@@ -1,0 +1,78 @@
+The following accounts on computer GATADI1 in domain AMERICAS had the password set to Hp543634A!L* 
+hpadmin 
+
+p4 revert -n -c default //vgatadi1/...
+
+List thefiles between dates : p4 files //depot/swift/snapfish/main/…@2011/MM/DD,@now
+
+List the dirs: p4 dirs  //depot/swift/*
+
+List the second level of dirs : for /f usebackq %i in (`p4 dirs *`) do  p4 dirs %i/*
+
+for /f usebackq %i in (`p4 dirs *`) do  p4 sizes -s %i
+
+for /f usebackq %i in (`p4 dirs *`) do  p4 sizes -s %i
+
+for /f usebackq %i in (`p4 dirs //depot/Patch/2011/19/*`) do  p4 integ -v -n %i/...  //depot/Snapfish/2011/19/...
+
+for /f usebackq %i in (`p4 files //depot/swift/snapfish/patch/main/...@2012/01/01,@2012/06/15`) do  p4 delete -v %i/...
+
+for /f usebackq %i in (`p4 files //depot/swift/snapfish/patch/main/...@2012/01/01,@2012/06/15`) do  echo %i
+
+Search for a file : p4 files //depot/swift/snapfish/main/...omniture*.js
+
+p4 files  //depot/Snapfish/console_backups/sfprod/...@2011/03/01,@now
+
+p4 filelog -L -i //depot/Snapfish/Main/public_html/default/ftl/...
+
+p4 fstat -P -C -Ol -T "depotFile" -e default -W //vgatadi1/…
+
+p4 fstat -P -C -Ol -T "depotFile" -e 353798 -W //vgatadi1/…
+
+p4 fstat -P -C -Ol -T "depotFile" -F "headAction=delete" INF-REORGCMPS/…
+
+p4 fstat -P -C -Ol -T "depotFile" -F "(headAction=branch | headAction=integrate) & action=delete"
+
+p4 fstat -P -C -Ol -T "depotFile" -F "headAction=delete" //depot/swift/snapfish/main/...011/MM/DD,@now
+
+p4 fstat -P -C -Ol -T "depotFile" -F "headAction=add" //depot/Snapfish/Main/public_html/default/images/...@2010/01/01,@now
+
+p4 reopen -c changelisnt#   file-to-move-from-default-to-changelist
+
+p4 users 
+
+p4 changes -u user -L -m 10
+
+p4 describe changelist#
+
+p4 changelist -o changelist#
+
+p4 changes -s submitted  -m 500 //depot/Scratch/SOFI/webapps/fe/…
+
+p4 fstat  -T "depotFiel" -c chagnelist //depot/Scratch/SOFI/webapps/fe/…
+
+p4 diff2 -q //depot/Snapfish/Main/resourcebundle/... //depot/Snapfish/Main/resourcebundle/...@2011/01/01
+
+p4 diff2 -q //depot/Snapfish/Integration/resourcebundle/... //depot/Snapfish/Integration/resourcebundle/...@2011/01/01
+
+p4 diff2 -q //depot/swift/snapfish/main/shared/assets/css/common.css //depot/swift/snapfish/main/shared/assets/css/common.css@2010/07/01
+
+p4 diff2 -t -q  //depot/Snapfish/Main/public_html/default/images/… //depot/Snapfish/Main/public_html/default/images/..@2010/10/04
+
+P4 sizes -s ...
+
+List all the files in a folder and sub folder : dir /b /s   FOLDER
+
+Count the files: dir /b /s | find /v /c ""
+
+Find a string in files : findstr /s /i /c:"string-to-search" ./*
+
+Find a string in files, list only the files : findstr /s /i /m /c:"string-to-search" ./*
+
+Find all writeable files
+dir /s /b /a:-D-R  
+
+list files (recursive)
+dir /s /b /a:-D
+
+
