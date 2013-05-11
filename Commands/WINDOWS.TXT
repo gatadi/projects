@@ -1,1 +1,0 @@
-REM XCOPY /S /I /D /Y C:\Vijay E:\vijay
